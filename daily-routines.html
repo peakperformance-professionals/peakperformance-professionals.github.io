@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routines</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <script> insertAll('Daily Routine - Peak performance'); </script>
+    <style>
+        /* Custom styles for the timeline layout */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #007bff;
+            /* Timeline line color */
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            background-color: #f0f0f0;
+            /* Item background color */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /*
+
+        .timeline-item:before,
+        .timeline-item:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .timeline-item:before {
+            content: attr(data-year);
+            display: block;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff; 
+        }
+        */
+
+        .image-container {
+            width: 45%;
+            float: left;
+            margin-right: 5%;
+            vertical-align: top;
+        }
+
+        .text-container {
+            width: 50%;
+            float: right;
+        }
+
+        /* Style for routine images */
+        .routine-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <main>
+        <div class="container">
+            <!-- Timeline layout for daily routines -->
+            <div class="timeline">
+                <!-- Any time of the day -->
+                <!-- Everyday Morning -->
+                <div class="timeline-item" data-year="Everyday Morning">
+                    <div class="image-container">
+                        <h3>Everyday Morning</h3>
+                        <img src="images/everyday-morning.jpeg" alt="Everyday Morning" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>Start your day right with these morning rituals:</p>
+                        <ul>
+                            <li>Wake up at 4 am</li>
+                            <li>Drink a glass of water and perform personal hygiene</li>
+                            <li>Exercise with warm-up, Surya Namaskar, and 30 minutes of yoga</li>
+                            <li>Practice Pranayama for 15 minutes, followed by a 15-minute meditation session</li>
+                            <li>Write your goals and plan for the day</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Everyday Afternoon -->
+                <div class="timeline-item" data-year="Everyday Afternoon">
+                    <div class="image-container">
+                        <h3>Everyday Afternoon</h3>
+                        <img src="images/everyday-afternoon.jpeg" alt="Everyday Afternoon" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>Stay energized throughout the day with these afternoon routines:</p>
+                        <ul>
+                            <li>Eat a balanced lunch before 1:30 pm</li>
+                            <li>Take a 10-minute break every hour for a short walk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Everyday Evening -->
+                <div class="timeline-item" data-year="Everyday Evening">
+                    <div class="image-container">
+                        <h3>Everyday Evening</h3>
+                        <img src="images/everyday-evening.jpeg" alt="Everyday Evening" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>Wind down and prepare for a restful night with these evening rituals:</p>
+                        <ul>
+                            <li>Do 20 minutes of yoga and 10 minutes of meditation</li>
+                            <li>Have a light dinner before 7:00 pm</li>
+                            <li>Review tasks identified for the day and prioritize tasks for the evening</li>
+                            <li>Dedicate time to skill development through online courses, reading, or practice</li>
+                            <li>Practice gratitude and spend time outdoors connecting with nature</li>
+                            <li>Engage in self-care activities</li>
+                            <li>Spend quality time with family or friends</li>
+                            <li>Engage in a creative project or brainstorm innovative ideas</li>
+                            <li>Practice mindful communication with others</li>
+                            <li>Volunteer for a cause aligned with your interests and goals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Everyday Before Sleep -->
+                <div class="timeline-item" data-year="Everyday Before Sleep">
+                    <div class="image-container">
+                        <h3>Everyday Before Sleep</h3>
+                        <img src="images/everyday-before-sleep.jpeg" alt="Everyday Before Sleep" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>End your day on a peaceful note with these bedtime routines:</p>
+                        <ul>
+                            <li>Write down thoughts on paper to clear your mind</li>
+                            <li>Reflect on planned and unplanned tasks</li>
+                            <li>Write down goals and tasks for the next day</li>
+                            <li>Practice relaxation techniques such as deep breathing</li>
+                            <li>Wash eyes with cold water to reduce strain</li>
+                            <li>Create a calming bedtime routine</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="Any time of the day">
+                    <div class="image-container">
+                        <h3>Any time of the day</h3>
+                        <img src="images/any-time-of-the-day.jpeg" alt="Any Time of the Day" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>These practices can be incorporated into any part of your day to maintain focus and
+                            productivity:</p>
+                        <ul>
+                            <li>Write down thoughts on paper to clear your mind</li>
+                            <li>Practice deep breathing exercises for relaxation and focus</li>
+                            <li>Ensure mindfulness in every activity, focusing on the present moment</li>
+                            <li>Take a 5-minute break after deep focus sessions</li>
+                            <li>Plan work tasks in 15-minute intervals using the timer method</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Any time of the day - planning the unplanned -->
+                <div class="timeline-item" data-year="Any time of the day - planning the unplanned">
+                    <div class="image-container">
+                        <h3>Any time of the day - planning the unplanned</h3>
+                        <img src="images/planning-the-unplanned.jpeg" alt="Planning the Unplanned"
+                            class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>Be prepared for unplanned tasks and emergencies with these strategies:</p>
+                        <ul>
+                            <li>Write down unplanned tasks and plan them for the next day</li>
+                            <li>For urgent tasks, give them 1 minute of thought and decide whether to do, skip,
+                                delegate, or delay</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Any time of the day - avoid these -->
+                <div class="timeline-item" data-year="Any time of the day - avoid these">
+                    <div class="image-container">
+                        <h3>Any time of the day - avoid these</h3>
+                        <img src="images/avoid-these.jpeg" alt="Avoid These" class="routine-image">
+                    </div>
+                    <div class="text-container">
+                        <p>Avoid these habits to maintain a healthy and productive lifestyle:</p>
+                        <ul>
+                            <li>No snacking between meals</li>
+                            <li>Avoid watching TV or any other entertainment during work time</li>
+                            <li>Avoid sugary and salty drinks and snacks; opt for green tea or herbal tea</li>
+                            <li>Avoid consuming chips, cookies, or fryums as snacks; opt for fruits or nuts</li>
+                            <li>Avoid multitasking; focus on one task at a time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+
+</body>
+
+</html>
